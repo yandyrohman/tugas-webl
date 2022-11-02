@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      :root {
+        --clr-dark:rgb(31 41 35);
+        --clr-grey:rgb(107 114 128);
+      }
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      .navbar-brand {
+        font-family: 'Nunito', sans-serif;
+        color:var(--clr-dark) !important;
+      }
+      .nav-link {
+        font-weight: 500;
+        font-size: 0,875rem;
+      }
+      .nav-link.active,
+      .navbar-brand {
+        color: var(--clr-dark) !important;
+      }
+
+      .main-header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--clr-dark);
+
+      }
+      @media (min-width: 576px) {
+        .main-header {
+          font-size: 4rem;
+        }
+      }
+
+      .my-foto {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 1rem;
+      }
+
+      .section-header {
+        font-weight: bold;
+        color: var(--clr-dark);
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 1rem 3rem rgba(145, 145, 145, 0.175) !important;
+      }
+
+      .section {
+        scroll-margin-top: 4rem;
+      }
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Website Saya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+              <a class="nav-link active" href="#profile">Profile</a>
+              <a class="nav-link" href="#karya">Jualan</a>
+              <a class="nav-link" href="#galeri">Galeri</a>
+              <a class="nav-link" href="#alamat">Alamat</a>
+              <a class="nav-link" href="#kontak">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Tentang -->
+      <section class="min-vh-100 d-flex align-items-center py-lg-0 py-5" id="profile">
+        <div class="container">
+          <div class="row align-items-center g-5 g-lg-0">
+            <div class="col-lg-7 order-lg-7 order-2" data-aos="fade-right" data-aos-duration="2000">
+              <h1 class="main-header">
+                Halo Netizen!
+                <br>
+                <span class="text-info">Saya Yandi Rohman</span>
+              </h1>
+              <p class="my-4 text-content px">
+                Saya adalah seorang mahasiswa semester 5 di Universitas Suryakancana. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque tenetur dolorem quaerat pariatur fugit autem asperiores, fugiat delectus mollitia facilis explicabo porro, consequuntur sunt soluta nostrum ad beatae adipisci!
+              </p>
+              <a class="btn btn-info btn-lg shadow-lg" href="#kontak">Hubungi Saya</a>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-1" data-aos="fade-left" data-aos-duration="2000">
+              <img class="my-foto" height="480" src="asset/me.jpg" alt="Portofolio">
+            </div>
+          </div> 
+
+        </div>
+      </section>
+
+      <!-- Jualan -->
+      <section class="my-5 " id="karya">
+        <div class="container">
+          <h2 class="section-header text-center">Jualan</h2>
+          <p class="text-center mb-4 text-content">
+            - Saya menjual berbagai makanan -
+          </p>
+          <div class="row gy-4" >
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-1.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Baso Mercon</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-2.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Seblak Naga</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-3.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Eskrim Kutub</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-4.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Batagor Tidagor</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-5.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Somay Mantap</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/jualan/jualan-6.jpg" class="card-img-top" style="object-fit: cover" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Mie Ayam</h5>
+                  <p class="card-text text-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium enim, aspernatur quidem voluptate, odio alias nostrum minima omnis.
+                  </p>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-info">Pesan Sekarang</a>
+                  <a href="#" class="btn btn-secondary">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeri -->
+      <section class="my-5" id="galeri">
+        <div class="container">
+          <h2 class="section-header text-center">Galeri</h2>
+          <p class="text-center mb-4 text-content">
+            - Lorem ipsum dolor sit -
+          </p>
+          <div class="row g-0">
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-1.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-3.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-4.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-5.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-6">
+              <div class="ratio ratio-1x1">
+                <img style="object-fit: cover" src="asset/gunung/gunung-6.jpg" alt="">
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alamat -->
+      <section class="my-5" id="alamat">
+        <div class="container">
+          <h2 class="section-header text-center">Alamat</h2>
+          <p class="text-center mb-4 text-content">
+            - Silahkan kunjungi saya jika mau -
+          </p>
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d560.1368844958738!2d107.25221940834399!3d-6.825637625394637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6855a4f9c8609d%3A0x5a766a4716960bc8!2sBibit%20Tanaman%20Online!5e0!3m2!1sid!2sid!4v1667398084719!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->      
+      <section class="my-5" id="kontak">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="section-header text-md-start text-center">Kontak Saya</h2>
+              <p class="text-conten text-md-start text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam minima corrupti harum, reprehenderit asperiores nemo laboriosam, debitis id, ipsam velit dolorem voluptas dolores fuga sapiente impedit. Sit quas modi vero!
+              </p>
+            </div>
+            <div class="col-md-8">
+              <form action="">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="mb-3" >
+                      <label for="nama" class="form-label fw-bold">Nama:</label>
+                      <input type="text" class="form-control" id="nama" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mb-3" >
+                      <label for="email" class="form-label fw-bold">Email:</label>
+                      <input type="email" class="form-control" id="email" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="mb-3" >
+                    <label for="message" class="form-label fw-bold">Message:</label>
+                    <textarea class="form-control" id="message" autocomplete="off" rows="6"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-content text-center py-3 border-top">
+        created by Yandi Rohman
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+      <script>
+          let navbar = document.getElementById('navbar-custom');
+  
+          window.addEventListener('scroll', function(){
+              let scroll = window.scrollY;
+  
+              if (scroll > 50) {
+                  navbar.classList.remove('navbar-dark');
+                  navbar.classList.add('bg-light');
+              } else {
+                  navbar.classList.add('navbar-dark');
+                  navbar.classList.remove('bg-light');
+              }
+          })
+      </script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+</html>
